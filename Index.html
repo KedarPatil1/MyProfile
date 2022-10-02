@@ -9,35 +9,46 @@
 </head>
 
 <style>
-    #nav,
-    a {
+    #nav {
         font-size: large;
         text-decoration: none;
         text-transform: uppercase;
-        color: rgb(26, 24, 24);
+        text-align: right;
         font-weight: bold;
         font-family: Candara;
-        /* padding-right: 30px; */
-        background-color: #dcdde1;
+        background-color: #076585;
         padding-bottom: 10px;
         padding-top: 10px;
         margin: 10px;
+        
     }
-
-    /* #nav{
-        margin-left: 174px;;
-    } */
 
     a:hover {
         background-color: #7f8fa6;
+       
     }
 
+    a {
+        margin: 10px;
+        
+    }
+
+    #nav a {
+        text-decoration: none;
+        margin: 10px;
+        color: white;
+        transform: scale(1.5);
+        text-shadow:  2px 2px #FF0000;
+        border-bottom:5px;
+
+    }
+    
     #header {
         text-transform: uppercase;
-
+        text-align: left;
         background-color: antiquewhite;
         color: brown;
-        text-align: center;
+
         margin: 10px;
     }
 
@@ -45,7 +56,7 @@
         background-image: url(homePage.png);
         background-repeat:no-repeat;
         height: 100px;;
-       
+        
     } */
     .header_top {
         margin: 30px;
@@ -67,6 +78,7 @@
     </div>
     <hr>
     <div>
+
         <nav id="nav">
 
             <a href="Home.html" target="my_index">HOME</a>
@@ -85,17 +97,16 @@
 
     </div>
     <div>
-        <iframe name="my_index" height="500" width="1250" style="border: none;" scrolling="no"></iframe>
+        <iframe name="my_index" height="700" width="1250" style="border: none;" scrolling="no"></iframe>
     </div>
-
-    <div>
+    <!-- <marquee direction="left" width="500px" height="300px" behavior="sliding"><h2> Main Heading</h2></marquee> -->
+    <div class="footer">
         <footer>
             <p> <strong>Follow Us</strong>
                 <a href="https://www.facebook.com/" style="font-size:20px;" target="_blank"><i
                         class="fa fa-facebook-official" aria-hidden="true"></i></a>
-              
-                <a href="#" style="font-size:20px;" target="_blank"><i class="fa fa-google"
-                        aria-hidden="true"></i></a>
+
+                <a href="#" style="font-size:20px;" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
                 <a href="#" style="font-size:20px;" target="_blank"><i class="fa fa-linkedin-square"
                         aria-hidden="true"></i></a>
                 <a href="#" style="font-size:20px;" target="_blank"><i class="fa fa-instagram"

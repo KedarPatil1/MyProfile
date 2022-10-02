@@ -3,110 +3,139 @@
 
 <head>
     <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    label{
+        font-family: 'Open Sans', sans-serif;
+        color:rgb(186, 91, 91);
+    }
+    body{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    input[type="text"] ,  input[type="password"] ,input[type="text"], input[type="email"]{
+        color: brown;
+        background-color: bisque;
+        /* width: ; */
+        text-transform: uppercase;
+        border-radius: 8px;
+    }
+    input[type="submit"], input[type="reset"] {
+        background: rgb(162, 227, 229);
+        color:rgb(165, 72, 72);width: 100px;
+        border-radius: 20px;
+        height: 30px;}
+        input[type="submit"]:hover, input[type="reset"]:hover{
+            background-color: black;
+        }
+</style>
 
 <body>
     <h3>Registration Form</h3>
-    <form >
-    <table>
-        <tbody>
-            <tr>
-                <td><label for="firstname">FirstName</label></td>
-                <td><input type="text" placeholder="Enter Your First Name" autofocus required></td>
-            </tr>
-            <tr>
-                <td><label for="lastname">LastName</label></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><label for="emailid">EmailId</label></td>
-                <td><input type="email"></td>
-            </tr>
-            <tr>
-                <td><label for="phone">MobileNo</label></td>
-                <td><input type="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" minlength="10"></td>
-            </tr>
-            <tr>
-                <td><label for="pass">Password</label></td>
-                <td><input type="password"></td>
-            </tr>
-            <tr>
-                <td><label for="graduation">Graduation</label></td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td><label for="selgra">Select Graduation</label></td>
-                <td>
-                    <select>
-                        <option></option>
-                        <option>BE</option>
-                        <option>B.Tech</option>
-                        <option>BCA</option>
-                        <option>MCA</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="traning">Training</label></td>
-                <td>
-                    <input type="checkbox" checked><label for="angular">Angular</label>
-                    <input type="checkbox"><label for="java">Java</label>
-                    <input type="checkbox"><label for="sql">SQL</label>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="gender">Gender</label></td>
-                <td>
-                    <input type="radio" name="gender" checked><label for="male">Male</label>
-                    <input type="radio" name="gender"><label for="female">Female</label>
-                    <input type="radio" name="gender"><label for="other">Other</label>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="DateOfBirth">DateOfBirth</label></td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td><label for="YearOfPassout">YearOfPassout</label></td>
-                <td><input type="date"></td>
-            </tr>
-            <tr>
-                <td><label for="country">Country</label></td>
-                <td><input type="text" name="country" value="India" disabled></td>
-            </tr>
-            <tr>
-                <td><label for="citiship">CitizenShip</label></td>
-                <td><input type="text" name="citiship" value="India" readonly></td>
-            </tr>
-            <tr>
-                <td><label for="choosefile">Profile Photo</label></td>
-                <td><input type="file" multiple></td>
-            </tr>
-            <tr>
-                <td><label for="certificate">Upload Certificate</label></td>
-                <td><input type="file" multiple></td>
-            </tr>
-            <tr>
-                <td>PermantAddress</td>
-                <td><Textarea rows="6" cols="50"></Textarea></td>
-            </tr>
-            <!--     imp -->
-            <tr>
-                <td>PreferedTime</td>
-                <td><input type="time"></td>
-            </tr>
-            
-        </tbody>
-    </table>
-   <button type="submit">Submit</button>
-   <button type="reset">Reset</button>
-</form>
-    <footer>
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="firstname">FirstName</label></td>
+                    <td><input type="text" placeholder="Enter Your First Name" autofocus required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">LastName</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="emailid">EmailId</label></td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">MobileNo</label></td>
+                    <td><input type="text" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" minlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="graduation">Graduation</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="selgra">Select Graduation</label></td>
+                    <td>
+                        <select>
+                            <option></option>
+                            <option>BE</option>
+                            <option>B.Tech</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="traning">Training</label></td>
+                    <td>
+                        <input type="checkbox" checked><label for="angular">Angular</label>
+                        <input type="checkbox"><label for="java">Java</label>
+                        <input type="checkbox"><label for="sql">SQL</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" checked><label for="male">Male</label>
+                        <input type="radio" name="gender"><label for="female">Female</label>
+                        <input type="radio" name="gender"><label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="DateOfBirth">DateOfBirth</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="YearOfPassout">YearOfPassout</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><input type="text" name="country" value="India" disabled></td>
+                </tr>
+                <tr>
+                    <td><label for="citiship">CitizenShip</label></td>
+                    <td><input type="text" name="citiship" value="India" readonly></td>
+                </tr>
+                <tr>
+                    <td><label for="choosefile">Profile Photo</label></td>
+                    <td><input type="file" multiple></td>
+                </tr>
+                <tr>
+                    <td><label for="certificate">Upload Certificate</label></td>
+                    <td><input type="file" multiple></td>
+                </tr>
+                <tr>
+                    <td>PermantAddress</td>
+                    <td><Textarea rows="6" cols="50"></Textarea></td>
+                </tr>
+                <!--     imp -->
+                <tr>
+                    <td>PreferedTime</td>
+                    <td><input type="time"></td>
+                </tr>
+
+            </tbody>
+        </table>
+        <input type="submit"></button>
+        <input   type="reset"></button>
+    </form>
+    <!-- <footer>
         <p>Follow me on</p>
-        <a href="https://www.facebook.com/login/" target="_blank">  <i class="fa fa-instagram" aria-hidden="true"></i></a>
-      
-    </footer>
+        <a href="https://www.facebook.com/login/" target="_blank"> <i class="fa fa-instagram"
+                aria-hidden="true"></i></a>
+
+    </footer> -->
 
 </body>
 
