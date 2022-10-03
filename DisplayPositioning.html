@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display</title>
+    <style>
+.box1{
+    border: 5px solid black;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    /* position: static; by default  */
+    position: static;
+    /* margin-left: 50px; */
+}
+.box2{
+    border: 5px solid black;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    /* margin-left: 10px; */
+    margin-top: 50px;
+    position: absolute;
+    z-index:-1;
+    
+}
+.box3{
+    border: 5px solid black;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    position: static;
+    /* margin-left: 50px; */
+    z-index: 5;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h3>This is box one </h3>
+    </div>
+    <div class="box2">
+        <h3>This is box second </h3>
+    </div>
+    <div class="box3">
+        <h3>This is box third </h3>
+    </div>
+</body>
+
+</html>
