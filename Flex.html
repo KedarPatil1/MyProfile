@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Flex
+    </title>
+    <style>
+        .container {
+            flex-direction: row;
+            display: flex;
+            border: 1px;
+            height: 500px;
+            /* align-items: flex-end; */
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .container div {
+            border: 1px solid black;
+            background-color: #f1f1f1;
+            margin: 12px;
+            padding: 30px;
+            font-size: 30px;
+        }
+
+        /* .div1,
+        .div2,
+        .div3,
+        .div4 {
+
+        } */
+    </style>
+</head>
+
+<body>
+    <h3>This is Flex Element</h3>
+    <div class="container">
+        <div class="div1">
+            This is Flex one
+        </div>
+        <div class="div2">
+            This is Flex Second
+        </div>
+        <div class="div3">
+            This is Flex Third
+        </div>
+        <div class="div4">
+            This is Flex Fourth
+        </div>
+    </div>
+</body>
+
+</html>
